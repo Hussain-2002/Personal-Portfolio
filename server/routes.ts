@@ -23,19 +23,46 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      // In a real implementation, you would:
-      // 1. Save the contact form submission to a database
-      // 2. Send an email notification
-      // 3. Send a confirmation email to the user
-      
-      console.log("Contact form submission for Hussain Ali Mesharwala:", {
+      // Prepare data for Google Sheets
+      const formData = {
         firstName,
         lastName,
         email,
         subject,
         message,
-        timestamp: new Date().toISOString()
-      });
+        timestamp: new Date().toISOString(),
+        fullName: `${firstName} ${lastName}`
+      };
+
+      // Send data to Google Apps Script
+      const googleAppsScriptUrl = process.env.GOOGLE_APPS_SCRIPT_URL;
+      
+      if (googleAppsScriptUrl) {
+        try {
+          const response = await fetch(googleAppsScriptUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+
+          if (!response.ok) {
+            console.error('Failed to send data to Google Sheets:', response.statusText);
+            // Continue without failing the request
+          } else {
+            console.log('Successfully sent data to Google Sheets');
+          }
+        } catch (googleSheetsError) {
+          console.error('Error sending to Google Sheets:', googleSheetsError);
+          // Continue without failing the request
+        }
+      } else {
+        console.log('Google Apps Script URL not configured');
+      }
+
+      // Log for backup/debugging
+      console.log("Contact form submission for Hussain Ali Mesharwala:", formData);
 
       res.json({ 
         message: "Contact form submitted successfully",

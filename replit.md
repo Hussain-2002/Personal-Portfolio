@@ -20,6 +20,15 @@ Preferred communication style: Simple, everyday language.
   - LinkedIn: https://www.linkedin.com/in/hussain-ali-mesharwala-865315205
   - Twitter: Removed from social links
 
+## Google Sheets Integration (January 25, 2025)
+- Contact form now integrates with Google Sheets via Google Apps Script
+- Form submissions are automatically saved to a Google Sheet
+- Setup requires:
+  1. Creating a Google Sheet with specific headers
+  2. Setting up Google Apps Script with provided code
+  3. Adding GOOGLE_APPS_SCRIPT_URL environment variable
+- Detailed setup instructions available in `google-apps-script-setup.md`
+
 ## System Architecture
 
 ### Frontend Architecture
