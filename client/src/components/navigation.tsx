@@ -73,7 +73,7 @@ export function Navigation() {
               onClick={() => scrollToSection("#home")}
               className="text-2xl font-bold gradient-text"
             >
-              AJ
+              HAM
             </button>
           </motion.div>
 

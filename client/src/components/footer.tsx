@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUp, Linkedin, Github, Twitter, Instagram } from "lucide-react";
+import { ArrowUp, Linkedin, Github, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { fadeInUp } from "@/lib/animations";
 
@@ -19,10 +19,9 @@ const services = [
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/hussain-ali-mesharwala-865315205", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/Hussain-2002", label: "GitHub" },
+  { icon: Instagram, href: "https://www.instagram.com/hussain_maheshwar_wala/", label: "Instagram" },
 ];
 
 export function Footer() {
@@ -52,7 +51,7 @@ export function Footer() {
               onClick={() => scrollToSection("#home")}
               className="text-3xl font-bold gradient-text mb-4 block"
             >
-              Alex Johnson
+              Hussain Ali Mesharwala
             </button>
             <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md">
               Full Stack Developer passionate about creating beautiful, performant web applications with modern technologies.
@@ -117,7 +116,7 @@ export function Footer() {
           className="border-t border-gray-200 dark:border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-600 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} Alex Johnson. All rights reserved.
+            © {new Date().getFullYear()} Hussain Ali Mesharwala. All rights reserved.
           </p>
           <div className="flex items-center mt-4 md:mt-0">
             <Button

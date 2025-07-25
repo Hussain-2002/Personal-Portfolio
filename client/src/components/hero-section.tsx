@@ -80,7 +80,7 @@ export function HeroSection() {
           >
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
-              alt="Alex Johnson - Professional headshot"
+              alt="Hussain Ali Mesharwala - Professional headshot"
               className="w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-white dark:ring-gray-800"
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 hover:from-primary/30 hover:to-secondary/30 transition-all duration-300" />
@@ -89,7 +89,7 @@ export function HeroSection() {
 
         <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold mb-6">
           <span className="gradient-text">
-            Alex Johnson
+            Hussain Ali Mesharwala
           </span>
         </motion.h1>
         

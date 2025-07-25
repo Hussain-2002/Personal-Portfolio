@@ -13,31 +13,30 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "alex@example.com",
-    href: "mailto:alex@example.com",
+    value: "Hussainmesharwala@gmail.com",
+    href: "mailto:Hussainmesharwala@gmail.com",
     color: "from-primary to-secondary",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (234) 567-8900",
-    href: "tel:+1234567890",
+    value: "7024951915",
+    href: "tel:7024951915",
     color: "from-cyan-500 to-emerald-500",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Ujjain, India",
     href: "#",
     color: "from-green-500 to-emerald-500",
   },
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", color: "from-blue-500 to-blue-600" },
-  { icon: Github, href: "#", color: "from-gray-700 to-gray-800" },
-  { icon: Twitter, href: "#", color: "from-blue-400 to-blue-500" },
-  { icon: Instagram, href: "#", color: "from-red-500 to-red-600" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/hussain-ali-mesharwala-865315205", color: "from-blue-500 to-blue-600" },
+  { icon: Github, href: "https://github.com/Hussain-2002", color: "from-gray-700 to-gray-800" },
+  { icon: Instagram, href: "https://www.instagram.com/hussain_maheshwar_wala/", color: "from-red-500 to-red-600" },
 ];
 
 export function ContactSection() {

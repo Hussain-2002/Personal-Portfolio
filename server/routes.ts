@@ -28,7 +28,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // 2. Send an email notification
       // 3. Send a confirmation email to the user
       
-      console.log("Contact form submission:", {
+      console.log("Contact form submission for Hussain Ali Mesharwala:", {
         firstName,
         lastName,
         email,

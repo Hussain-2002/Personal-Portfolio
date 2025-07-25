@@ -8,6 +8,18 @@ This is a modern, interactive personal portfolio website built with React, Expre
 
 Preferred communication style: Simple, everyday language.
 
+## Personal Information Updates (January 25, 2025)
+- Portfolio owner: Hussain Ali Mesharwala
+- Logo/Brand: HAM
+- Email: Hussainmesharwala@gmail.com  
+- Phone: 7024951915
+- Location: Ujjain, India
+- Social Media:
+  - Instagram: https://www.instagram.com/hussain_maheshwar_wala/
+  - GitHub: https://github.com/Hussain-2002
+  - LinkedIn: https://www.linkedin.com/in/hussain-ali-mesharwala-865315205
+  - Twitter: Removed from social links
+
 ## System Architecture
 
 ### Frontend Architecture
