@@ -78,13 +78,16 @@ export function HeroSection() {
             whileHover={{ scale: 1.05 }}
             className="w-32 h-32 mx-auto mb-8 relative"
           >
+
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
-              alt="Hussain Ali Mesharwala - Professional headshot"
+              src="/profile.png"
+              alt="Hussain Ali Mesharwala"
               className="w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-white dark:ring-gray-800"
             />
+
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 hover:from-primary/30 hover:to-secondary/30 transition-all duration-300" />
           </motion.div>
+
         </motion.div>
 
         <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold mb-6">

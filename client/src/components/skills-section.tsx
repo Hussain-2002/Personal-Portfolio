@@ -22,7 +22,7 @@ const skillCategories = [
     skills: [
       { name: "Node.js", level: 92 },
       { name: "Express.js", level: 90 },
-      { name: "Python", level: 80 },
+      { name: "JavaScript", level: 80 },
     ],
   },
   {
@@ -31,8 +31,8 @@ const skillCategories = [
     color: "from-purple-500 to-pink-500",
     skills: [
       { name: "MongoDB", level: 88 },
-      { name: "PostgreSQL", level: 85 },
-      { name: "Docker", level: 75 },
+      { name: "SQL", level: 85 },
+      { name: "Firebase", level: 75 },
     ],
   },
 ];

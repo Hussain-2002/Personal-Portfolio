@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import {
   Download,
@@ -9,11 +10,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { fadeInUp, slideInFromLeft, slideInFromRight } from "@/lib/animations";
-
-const stats = [
-  { label: "Years Experience", value: "1+", icon: "experience" },
-  { label: "Projects Completed", value: "10+", icon: "projects" },
-];
 
 const techStack = [
   { name: "React", icon: Code, color: "from-blue-500 to-cyan-500" },
@@ -63,14 +59,10 @@ export function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl" />
             </div>
 
-            {/* Floating Stats Cards */}
+            {/* Floating Stats */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={
-                isVisible
-                  ? { opacity: 1, scale: 1 }
-                  : { opacity: 0, scale: 0.8 }
-              }
+              animate={isVisible ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.3 }}
               className="absolute -top-8 -right-8 glass-effect rounded-2xl p-6 shadow-xl"
             >
@@ -84,16 +76,12 @@ export function AboutSection() {
 
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={
-                isVisible
-                  ? { opacity: 1, scale: 1 }
-                  : { opacity: 0, scale: 0.8 }
-              }
+              animate={isVisible ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.5 }}
               className="absolute -bottom-8 -left-8 glass-effect rounded-2xl p-6 shadow-xl"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-500">50+</div>
+                <div className="text-3xl font-bold text-emerald-500">10+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">
                   Projects Completed
                 </div>
@@ -120,8 +108,8 @@ export function AboutSection() {
                 className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-6"
               >
                 I'm a passionate full-stack developer with over 5 years of
-                experience creating digital solutions that make a difference. I
-                specialize in React, Node.js, and modern web technologies.
+                experience creating digital solutions that make a difference.
+                I specialize in React, Node.js, and modern web technologies.
               </motion.p>
               <motion.p
                 variants={fadeInUp}
@@ -133,7 +121,7 @@ export function AboutSection() {
               </motion.p>
             </div>
 
-            {/* Tech Stack Icons */}
+            {/* Tech Stack */}
             <motion.div variants={fadeInUp}>
               <h3 className="text-xl font-semibold mb-4">
                 Technologies I Love
@@ -143,9 +131,7 @@ export function AboutSection() {
                   <motion.div
                     key={tech.name}
                     initial={{ opacity: 0, y: 20 }}
-                    animate={
-                      isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
-                    }
+                    animate={isVisible ? { opacity: 1, y: 0 } : {}}
                     transition={{ delay: 0.1 * index + 0.5 }}
                     className="group p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 dark:border-gray-700"
                   >
@@ -162,12 +148,18 @@ export function AboutSection() {
               </div>
             </motion.div>
 
-            {/* CTA Buttons */}
+            {/* Call-to-Action Buttons */}
             <motion.div variants={fadeInUp} className="flex space-x-4">
-              <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 transform hover:scale-105">
-                <Download className="h-5 w-5 mr-2" />
-                Download Resume
-              </Button>
+              <a
+                href="/Hussain(7024951915).pdf"
+                download
+                className="transition-all duration-300 transform hover:scale-105"
+              >
+                <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90">
+                  <Download className="h-5 w-5 mr-2" />
+                  Download Resume
+                </Button>
+              </a>
               <Button
                 variant="outline"
                 onClick={() => scrollToSection("#contact")}
@@ -183,3 +175,5 @@ export function AboutSection() {
     </section>
   );
 }
+
+export default AboutSection;

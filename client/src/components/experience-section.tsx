@@ -6,11 +6,11 @@ import { fadeInUp, staggerChildren } from "@/lib/animations";
 const experiences = [
   {
     id: 1,
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
+    title: "Full Stack Developer",
+    company: "GOANNY TECHNOLOGIES",
     period: "2022 - Present",
     description: "Leading a team of 5 developers in building scalable web applications. Architected microservices infrastructure that improved system performance by 40%.",
-    technologies: ["React", "Node.js", "AWS"],
+    technologies: ["React", "Node.js", "NEXT.js"],
     icon: Building,
     color: "from-blue-500 to-cyan-500",
     iconBg: "bg-primary",
@@ -18,8 +18,8 @@ const experiences = [
   {
     id: 2,
     title: "Full Stack Developer",
-    company: "Innovation Labs",
-    period: "2020 - 2022",
+    company: "NUMETRY TECHNOLOGIES",
+    period: "JAN 2025 - MARCH 2025",
     description: "Developed and maintained multiple client applications using React and Node.js. Implemented automated testing that reduced bugs by 60%.",
     technologies: ["React", "Express", "MongoDB"],
     icon: Code,
@@ -29,8 +29,8 @@ const experiences = [
   {
     id: 3,
     title: "Frontend Developer",
-    company: "StartupXYZ",
-    period: "2019 - 2020",
+    company: "BECILS PRIVATE LIMITED",
+    period: "JUNE 2022 to AUGUST 2022",
     description: "Built responsive web applications and landing pages. Collaborated with designers to create pixel-perfect user interfaces.",
     technologies: ["React", "Tailwind", "JavaScript"],
     icon: Laptop,
