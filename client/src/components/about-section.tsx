@@ -107,7 +107,7 @@ export function AboutSection() {
                 variants={fadeInUp}
                 className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-6"
               >
-                I'm a passionate full-stack developer with over 5 years of
+                I'm a passionate full-stack developer with over 1 years of
                 experience creating digital solutions that make a difference.
                 I specialize in React, Node.js, and modern web technologies.
               </motion.p>
